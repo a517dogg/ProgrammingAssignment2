@@ -7,6 +7,7 @@ makeCacheMatrix <- function(x = matrix()) {
     #This function creates a special "matrix" object that can cache its inverse.
     check <<- TRUE
     invm <<- solve(x)
+    return(invm)
 }
 
 ## Write a short comment describing this function
@@ -29,3 +30,4 @@ cacheSolve <- function(x, ...) {
         solve(x)
     }
 }
+
